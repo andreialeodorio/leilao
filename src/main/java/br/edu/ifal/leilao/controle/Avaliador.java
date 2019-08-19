@@ -33,7 +33,7 @@ public class Avaliador {
 				return 0;
 			}
 		});
-		top3MaioresLances = top3MaioresLances.subList(0, 3);
+		top3MaioresLances = top3MaioresLances.subList(0, top3MaioresLances.size() > 3 ? 3: top3MaioresLances.size());
 	}
 	
 	public double getMaiorLance() {
