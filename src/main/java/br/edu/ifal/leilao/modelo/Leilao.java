@@ -9,6 +9,11 @@ public class Leilao {
 	private List<Lance> lances;
 	private Produto produto;
 	
+	public Leilao(Produto produto){
+		this.produto = produto;
+		this.lances = new ArrayList<Lance>();
+	}
+	
 	public Produto getProduto() {
 		return produto;
 	}
@@ -29,7 +34,7 @@ public class Leilao {
 		this.lances = lances;
 	}
 	
-	 public void propoe(Lance lance ) {
+	 public void propoe(Lance lance) {
 		 
 		 this.lances.add(lance);
 		 
